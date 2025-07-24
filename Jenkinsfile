@@ -2,12 +2,12 @@ pipeline {
     agent {label 'verisoft-2'}
 
     parameters {
-        string(name: 'REPO_URL', defaultValue: 'https://github.com/tamar240/pipelineProject', description: 'Repository URL')
-        string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Branch name to build')
+        string(name: 'REPO_URL', defaultValue: 'https://github.com/chaya-kanyevski/pipelineProject', description: 'Repository URL')
+        string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'Branch name to build')
     }
 
     environment {
-        MAIN_BRANCH = 'main'
+        MAIN_BRANCH = 'master'
     }
 
     stages {
